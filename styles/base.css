@@ -9,13 +9,13 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #f8f9fa;
-    color: #333;
+    color: #333333;
 }
 
 /* Header */
 header {
     background-color: #123eb5;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1rem 0;
     font-weight: 100;
@@ -36,7 +36,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -65,7 +65,7 @@ main {
 
 /* Cards */
 .card {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -81,24 +81,28 @@ main {
 /* Footer */
 footer {
     background-color: #123eb5;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
 }
+
 /* Intro Name Section */
 #intro-name {
-  background-color: #ffffff; /* white background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0; /* uniform vertical spacing */
+    background-color: #ffffff;
+    /* white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    /* uniform vertical spacing */
 }
 
 #intro-name h1 {
-  font-weight: 700;
-  font-size: 2rem;
-  color: #123eb5; /* matches site theme */
-  text-align: center;
-  margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #123eb5;
+    /* matches site theme */
+    text-align: center;
+    margin: 0;
 }
