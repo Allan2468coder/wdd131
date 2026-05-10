@@ -86,3 +86,19 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
 }
+/* Intro Name Section */
+#intro-name {
+  background-color: #ffffff; /* white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0; /* uniform vertical spacing */
+}
+
+#intro-name h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #123eb5; /* matches site theme */
+  text-align: center;
+  margin: 0;
+}
