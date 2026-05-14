@@ -1,19 +1,21 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background-color: #e6f2e6; /* soft mint */
-  color:   #145214;
+  background-color: #e6f2e6;
+  color: #000000;
 }
 
 /* Header */
 header {
-  background-color: #0b3d0b; /* deep green */
-  color: #ffffff; /* white text for contrast */
+  background-color: #3b0066; /* deep purple */
+  color: #ffffff;
+}
+
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
 }
 
 header h1 {
@@ -22,36 +24,40 @@ header h1 {
   margin: 0;
 }
 
+#menuButton {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
 nav {
   display: flex;
-  gap: 1.5rem;
-  background: none;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0.5rem 0;
 }
 
 nav a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover {
   color: #e6f2e6;
-  background-color: #145214;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
 }
 
-/* Main */
+/* Gallery */
 main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #e6f2e6;
 }
 
-/* Gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -60,7 +66,6 @@ main {
   padding: 2rem 0;
 }
 
-/* Temple Cards */
 figure {
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -87,7 +92,7 @@ figure:hover img {
 }
 
 figcaption {
-  background-color: #0b3d0b;
+  background-color: #3b0066;
   color: #ffffff;
   padding: 0.5rem;
   font-weight: 600;
@@ -96,9 +101,27 @@ figcaption {
 
 /* Footer */
 footer {
-  background-color: #0b3d0b;
+  background-color: #3b0066;
   color: #ffffff;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+/* Mobile view */
+@media (max-width: 700px) {
+  #menuButton {
+    display: block; /* show hamburger */
+  }
+
+  nav {
+    display: none; /* hidden until toggled */
+    flex-direction: column;
+    background-color: #3b0066;
+    padding: 1rem 0;
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+  }
 }
