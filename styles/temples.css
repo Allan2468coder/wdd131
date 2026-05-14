@@ -2,13 +2,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   background-color: #e6f2e6;
-  color: #000000;
+  color: #145214;
 }
 
 /* Header */
 header {
-  background-color: #3b0066; /* deep purple */
-  color: #ffffff;
+  background-color: #145214; /* deep green */
+  color: #ffffff; /* white text for strong contrast */
 }
 
 .header-top {
@@ -92,7 +92,7 @@ figure:hover img {
 }
 
 figcaption {
-  background-color: #3b0066;
+  background-color: #145214;
   color: #ffffff;
   padding: 0.5rem;
   font-weight: 600;
@@ -101,7 +101,7 @@ figcaption {
 
 /* Footer */
 footer {
-  background-color: #3b0066;
+  background-color: #145214;
   color: #ffffff;
   text-align: center;
   padding: 1rem;
@@ -117,11 +117,36 @@ footer {
   nav {
     display: none; /* hidden until toggled */
     flex-direction: column;
-    background-color: #3b0066;
+    background-color: #145214;
     padding: 1rem 0;
   }
 
   nav a {
     padding: 0.5rem 0;
+  }
+}
+
+/* Mobile view: stack one temple per row */
+@media (max-width: 700px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* one column only */
+    gap: 1.5rem;
+    justify-items: center;
+    padding: 1rem;
+  }
+
+  figure {
+    width: 90%; /* keep images centered and responsive */
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }
