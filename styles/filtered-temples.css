@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --bg: #f4f8ff;
     --surface: #ffffff;
     --surface-soft: #ecf4ff;
@@ -8,18 +8,11 @@
     --accent: #1f7ae0;
     --accent-soft: #d9e8ff;
     --shadow: 0 22px 50px rgba(16, 34, 65, 0.12);
-
-    /* New additions */
-    --header-dark: #0f2e5b;
-    --header-blue: #1d588d;
-    --header-slogan: #dcecff;
-    --nav-hover: #11457e;
-    --nav-border: #c7ddf8;
-    --footer-border: #d7e4f4;
 }
 
-
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -32,11 +25,17 @@ body {
     font-family: "Montserrat", sans-serif;
     color: var(--text);
     background-color: var(--bg);
+    line-height: 1.5;
 }
 
 img {
     display: block;
     max-width: 100%;
+}
+
+a,
+button {
+    font: inherit;
 }
 
 a {
@@ -45,13 +44,13 @@ a {
 }
 
 button {
-    font: inherit;
     cursor: pointer;
 }
 
 header {
-    background: linear-gradient(135deg, var(--header-dark) 0%, var(--header-blue) 100%);
-    color: var(--surface);
+    background: linear-gradient(135deg, #0f2e5b 0%, #1d588d 100%);
+    color: #ffffff;
+    padding: 2rem 1.5rem 1.5rem;
 }
 
 header .top-bar {
@@ -71,7 +70,6 @@ header .top-bar {
 }
 
 .header-slogan {
-    color: var(--header-slogan);
     margin: 0.75rem 0 0;
     color: #dcecff;
     max-width: 740px;
@@ -102,11 +100,11 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background: var(--surface);
-    color: var(--nav-hover);
-    border-color: var(--nav-border);
+    background: #ffffff;
+    color: #11457e;
+    transform: translateY(-1px);
+    border-color: #c7ddf8;
 }
-
 
 main {
     max-width: 1180px;
@@ -184,27 +182,13 @@ main {
 
 .footer-note {
     margin-top: 3rem;
-    border-top: 1px solid var(--footer-border);
+    border-top: 1px solid #d7e4f4;
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     color: var(--muted);
     text-align: center;
-}
-
-.site-footer {
-    margin: 3rem auto 1rem;
-    padding: 1rem 1.5rem;
-    max-width: 1180px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    color: var(--muted);
-    background-color: rgba(255, 255, 255, 0.95);
-    border-top: 1px solid #d7e4f4;
 }
 
 footer {
@@ -214,10 +198,6 @@ footer {
 @media (min-width: 720px) {
     header {
         padding-top: 2.5rem;
-    }
-
-    nav {
-        justify-content: center;
     }
 }
 
