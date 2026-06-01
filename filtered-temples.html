@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Temple Album by Ogwal Allan featuring a responsive filter gallery of temple cards with lazy-loading images.">
+  <meta name="author" content="Ogwal Allan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album | Filtered Temples</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <script defer src="scripts/filtered-temples.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div>
+        <h1 class="header-title">Temple Album</h1>
+        <p class="header-slogan">Explore temple architecture from every era with an enhanced responsive gallery, built for mobile and desktop.</p>
+      </div>
+    </div>
+    <nav aria-label="Temple filters">
+      <a href="#" data-filter="home" class="active">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 id="pageHeading" class="page-heading">All Temples</h2>
+    <section class="gallery" id="templeGallery" aria-live="polite"></section>
+    <div class="footer-note">
+      <span id="displayCount">0 temples displayed</span>
+      <span>Use the filters above to view temples by age or size.</span>
+    </div>
+  </main>
+
+  <footer class="footer-note">
+    <p>© <span id="year"></span> Ogwal Allan | Temple Album</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>
