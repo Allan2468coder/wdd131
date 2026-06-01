@@ -53,28 +53,28 @@ const temples = [
         location: "Rome, Italy",
         dedicated: "2019, March, 10",
         area: 112000,
-        imageUrl: "https://picsum.photos/seed/rome/400/250"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-3548.jpg"
     },
     {
         templeName: "Tokyo Japan",
         location: "Tokyo, Japan",
         dedicated: "1980, October, 27",
         area: 52920,
-        imageUrl: "https://picsum.photos/seed/tokyo/400/250"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-26340.jpg"
     },
     {
         templeName: "Nairobi Kenya",
         location: "Nairobi, Kenya",
         dedicated: "2019, August, 16",
         area: 10990,
-        imageUrl: "https://picsum.photos/seed/nairobi/400/250"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-60485.jpg"
     },
     {
         templeName: "Chennai India",
         location: "Chennai, India",
         dedicated: "1985, January, 9",
         area: 23500,
-        imageUrl: "https://picsum.photos/seed/chennai/400/250"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/bengaluru-india-temple/bengaluru-india-temple-58039.jpg"
     }
 ];
 
