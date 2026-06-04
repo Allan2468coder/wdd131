@@ -33,10 +33,13 @@
     <main class="place-page">
         <section class="hero-panel">
             <div class="hero-image-wrapper">
-                <img class="hero-image" src="images/hero-1200.webp" srcset="images/hero-720.webp 720w,
-                      images/hero-1080.webp 1080w,
-                      images/hero-1440.webp 1440w" sizes="(max-width: 900px) 100vw, 1200px"
-                    alt="Iceland glacier lake landscape in evening light" loading="lazy">
+                <picture>
+                    <source type="image/webp"
+                        srcset="images/hero-720.webp 720w, images/hero-1080.webp 1080w, images/hero-1440.webp 1440w"
+                        sizes="(max-width: 900px) 100vw, 1200px">
+                    <img class="hero-image" src="images/hero-1200.webp"
+                        alt="Iceland glacier lake landscape in evening light" loading="lazy">
+                </picture>
             </div>
         </section>
 
