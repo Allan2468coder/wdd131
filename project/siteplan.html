@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALLAN SMOOKEY'S FASHIONZ — Site Plan</title>
+    <meta name="author" content="Ogwal Allan">
+    <meta name="description" content="Site plan for ALLAN SMOOKEY'S FASHIONZ — Gen Z fashion trends store.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <h1>ALLAN SMOOKEY'S <span class="accent">FASHIONZ</span></h1>
+                <p class="tag">Trend-led Gen Z streetwear — curated & buyable</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Website Planning Document — Week 05</h2>
+            <p>This plan outlines the brand, purpose, target scenarios, color schema, typography, and wireframes for the
+                project's home page.</p>
+        </section>
+
+        <section>
+            <h3>1. Site Name</h3>
+            <p><strong>ALLAN SMOOKEY'S FASHIONZ</strong> — A bold, memorable brand for Gen Z fashion shoppers, focusing
+                on limited drops, sustainable streetwear, and trend curation.
+            </p>
+            <p>Reason: memorable, brandable, and matches the playful tone the target audience prefers. Optional domain:
+                <em>allansmookeysfashionz.com</em> (example).</p>
+        </section>
+
+        <section>
+            <h3>2. Site Purpose</h3>
+            <ul>
+                <li>Showcase latest Gen Z fashion trends with curated product pages.</li>
+                <li>Allow customers to browse, sign up for restock notifications, and purchase limited items (mock
+                    checkout in this project).</li>
+                <li>Provide editorial content: trend guides, lookbooks, and styling tips.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>3. Scenarios</h3>
+            <ol>
+                <li>"I want an affordable, on-trend outfit for a weekend event — what should I buy?"</li>
+                <li>"Is this item sustainable or ethically sourced, and where can I find similar pieces?"</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>4. Color Schema (used on this document)</h3>
+            <div class="swatches">
+                <div class="swatch">
+                    <span class="sample" style="background:#0f4c5c"></span>
+                    <p><strong>#0F4C5C</strong> — Primary: header, CTAs</p>
+                </div>
+                <div class="swatch">
+                    <span class="sample" style="background:#2A9D8F"></span>
+                    <p><strong>#2A9D8F</strong> — Secondary: accents, highlights</p>
+                </div>
+                <div class="swatch">
+                    <span class="sample" style="background:#F4A261"></span>
+                    <p><strong>#F4A261</strong> — Accent: buttons, emphasis</p>
+                </div>
+                <div class="swatch">
+                    <span class="sample" style="background:#FFFFFF; border:1px solid #e6eef0"></span>
+                    <p><strong>#FFFFFF</strong> — Background, cards</p>
+                </div>
+            </div>
+            <p>Accessibility note: high contrast headings on light backgrounds and large font sizes ensure readability
+                for target users. Colors above are used in this document's stylesheet.</p>
+        </section>
+
+        <section>
+            <h3>5. Typography</h3>
+            <ul>
+                <li><strong>Playfair Display</strong> — Headings, brand wordmark (elegant display for title).</li>
+                <li><strong>Poppins</strong> — Body copy, UI text, and small headings (clean geometric for modern look).
+                </li>
+            </ul>
+            <p>Fonts loaded from Google Fonts and used consistently across headings and body text in the project.</p>
+        </section>
+
+        <section>
+            <h3>6. Wireframes</h3>
+            <p>Below are simple wireframe sketches for the Home page in mobile and desktop layouts. These are schematic
+                — content blocks will be implemented during Week 06.</p>
+
+            <div class="wireframes">
+                <figure>
+                    <figcaption>Mobile (320–480px)</figcaption>
+                    <svg width="260" height="420" viewBox="0 0 260 420" aria-hidden="true">
+                        <rect x="4" y="6" width="252" height="60" rx="8" fill="#ffffff" stroke="#d7e3e5"></rect>
+                        <rect x="8" y="76" width="244" height="140" rx="8" fill="#f7fbfb" stroke="#d7e3e5"></rect>
+                        <rect x="8" y="228" width="120" height="80" rx="8" fill="#ffffff" stroke="#d7e3e5"></rect>
+                        <rect x="132" y="228" width="120" height="80" rx="8" fill="#ffffff" stroke="#d7e3e5"></rect>
+                        <rect x="8" y="320" width="244" height="64" rx="8" fill="#f7fbfb" stroke="#d7e3e5"></rect>
+                    </svg>
+                </figure>
+
+                <figure>
+                    <figcaption>Desktop / Wide (1024px+)</figcaption>
+                    <svg width="520" height="300" viewBox="0 0 520 300" aria-hidden="true">
+                        <rect x="8" y="8" width="504" height="56" rx="10" fill="#ffffff" stroke="#d7e3e5"></rect>
+                        <rect x="8" y="76" width="344" height="200" rx="10" fill="#f7fbfb" stroke="#d7e3e5"></rect>
+                        <rect x="360" y="76" width="152" height="96" rx="8" fill="#ffffff" stroke="#d7e3e5"></rect>
+                        <rect x="360" y="180" width="152" height="96" rx="8" fill="#ffffff" stroke="#d7e3e5"></rect>
+                    </svg>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <h3>Testing & Validation</h3>
+            <ol>
+                <li>Run HTML validation via validator.w3.org/nu — fix any reported errors.</li>
+                <li>Run CSS validation via jigsaw.w3.org/css-validator/.</li>
+                <li>Use Lighthouse and DevTools CSS Overview to check Accessibility and Contrast.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Next Steps (Week 06)</h3>
+            <ul>
+                <li>Build Home, Products, and References pages with consistent navigation.</li>
+                <li>Implement product data and form interactivity using JavaScript (localStorage, arrays, objects,
+                    template literals).</li>
+                <li>Optimize images and use native lazy loading.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear">2026</span> ALLAN SMOOKEY'S FASHIONZ — <a
+                    href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+:root {
+    --primary: #0f4c5c;
+    --secondary: #2a9d8f;
+    --accent: #f4a261;
+    --muted: #e6eef0;
+    --text: #102a43;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Poppins', system-ui, Segoe UI, Arial, sans-serif;
+    color: var(--text);
+    background: #f4f7f6;
+    margin: 0
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1.25rem
+}
+
+.site-header {
+    background: var(--primary);
+    color: #fff;
+    padding: 2rem 0
+}
+
+.brand h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25rem;
+    margin: 0
+}
+
+.brand .accent {
+    color: var(--accent)
+}
+
+.tag {
+    opacity: 0.95;
+    margin-top: 0.25rem
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    font-size: 1.45rem
+}
+
+main section {
+    background: transparent;
+    padding: 1rem 0;
+    border-bottom: 1px dashed var(--muted)
+}
+
+.swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem
+}
+
+.swatch {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem
+}
+
+.sample {
+    width: 48px;
+    height: 36px;
+    border-radius: 6px;
+    display: inline-block
+}
+
+.wireframes {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem
+}
+
+figure {
+    margin: 0
+}
+
+figcaption {
+    font-size: 0.92rem;
+    margin-bottom: 0.5rem;
+    color: #3b5560
+}
+
+.site-footer {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem;
+    margin-top: 1.5rem
+}
+
+.site-footer a {
+    color: var(--accent);
+    text-decoration: underline
+}
+
+@media(min-width:900px) {
+    .brand h1 {
+        font-size: 2.9rem
+    }
+}
