@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="Confirmation landing page tracking submissions counter via localStorage.">
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Submission Success</h1>
+    </header>
+
+    <main>
+        <section class="confirmation-card">
+            <h2>Thank You For Your Review!</h2>
+            <p>Your product evaluation was securely transmitted and saved into our record network.</p>
+
+            <hr class="divider">
+
+            <div class="counter-box">
+                <p>Total Form Submissions Logged on This Device:</p>
+                <span id="submissionCounter" class="counter-number">0</span>
+            </div>
+
+            <a href="form.html" class="return-link">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> ¥ Ogwal Allan ¥ Uganda</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
