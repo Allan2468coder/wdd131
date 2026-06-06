@@ -114,6 +114,23 @@ main section.intro {
     flex-shrink: 0;
 }
 
+.sample.primary {
+    background: var(--primary);
+}
+
+.sample.secondary {
+    background: var(--secondary);
+}
+
+.sample.accent {
+    background: var(--accent);
+}
+
+.sample.light {
+    background: #ffffff;
+    border: 1px solid var(--muted);
+}
+
 .swatch p {
     margin: 0;
     font-size: 0.95rem;
