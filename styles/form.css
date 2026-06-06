@@ -226,6 +226,17 @@ footer p {
     margin-bottom: 0.25rem;
 }
 
+footer a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
 /* --- Media Queries Desktop Optimization --- */
 @media (min-width: 600px) {
     form {

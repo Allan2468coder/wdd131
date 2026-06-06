@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALLAN SMOOKEY'S FASHIONZ — Home</title>
+    <meta name="author" content="Ogwal Allan">
+    <meta name="description" content="ALLAN SMOOKEY'S FASHIONZ — Trend-led Gen Z fashion store home page.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="brand">ALLAN SMOOKEY'S <span class="accent">FASHIONZ</span></h1>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="../form.html">Review Form</a>
+                <a href="references.html">References</a>
+                <button id="cartBtn" class="cart-btn" aria-label="View cart">Cart (<span
+                        id="cartCount">0</span>)</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-left">
+                <h2>Latest Gen Z Drops</h2>
+                <p class="lead">Curated streetwear & sustainable finds — limited runs, bold statements.</p>
+                <a class="cta" href="products.html">Shop New Arrivals</a>
+            </div>
+            <div class="hero-right">
+                <img src="../images/hero-streetwear.jpg" alt="Streetwear look" loading="lazy">
+            </div>
+        </section>
+
+        <section>
+            <h3>Featured</h3>
+            <div id="productsGrid" class="products-grid" aria-live="polite">
+                <!-- products rendered by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> ALLAN SMOOKEY'S FASHIONZ — <a href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products — ALLAN SMOOKEY'S FASHIONZ</title>
+    <meta name="author" content="Ogwal Allan">
+    <meta name="description" content="Products listing for ALLAN SMOOKEY'S FASHIONZ.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="brand">ALLAN SMOOKEY'S <span class="accent">FASHIONZ</span></h1>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="../form.html">Review Form</a>
+                <a href="references.html">References</a>
+                <button id="cartBtnTop" class="cart-btn" aria-label="View cart">Cart (<span
+                        id="cartCountTop">0</span>)</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>All Products</h2>
+        <p class="lead">Browse our curated selection. Click <strong>Add</strong> to save to your cart (stored locally).
+        </p>
+
+        <div id="productsList" class="products-list">
+            <!-- rendered by JS -->
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="yearP"></span> ALLAN SMOOKEY'S FASHIONZ — <a href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script>document.getElementById('yearP').textContent = new Date().getFullYear()</script>
+</body>
+
+</html>
